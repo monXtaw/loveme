@@ -8,7 +8,7 @@ const yesBtn = document.querySelector(".js-yes-btn");
 const noBtn = document.querySelector(".js-no-btn");
 
 // /change the postion of no button
-noBtn.addEventListener("", () => {
+noBtn.addEventListener("mouseover", () => {
   const newX = Math.floor(Math.random() * questionContainer.offsetWidth);
   const newY = Math.floor(Math.random() * questionContainer.offsetWidth);
 
@@ -37,4 +37,5 @@ noBtn.addEventListener("click", () => {
     resultContainerNo.style.display = "inherit";
     gifNoResult.play();
   }, 3000);
+
 });
